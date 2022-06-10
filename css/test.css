@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --main-color: #EEE;
+    --second-color: #AAA;
+}
+.title{
+    background-color: var(--main-color);
+}
+.title-p{
+    color: var(--second-color);
+}
+input:hover{
+    box-shadow: 0px 0px 0.75rem -0.25rem #888;
+}
+.form-control:focus{
+    box-shadow:none;
+    border: 0.1rem solid #000;
+}
+.line{
+    height: 1px;
+}
+.data{
+    background: linear-gradient(#EEE,#FFF);
+}
+.error-text{
+    border-radius: 5px;
+}

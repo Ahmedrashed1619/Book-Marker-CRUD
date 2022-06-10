@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Bookmark App</title>
+        <meta charset="UTF-8">
+        <meta name = "description" content="Books">
+        <meta name = "kaywords" content="Books">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/test.css">
+    </head>
+    <body>
+
+        <section class="container d-flex justify-content-center align-items-center flex-column">
+            <header class="container py-3">
+                <h1 class="title-p fs-2 fw-bold">Bookmarker</h1>
+            </header>
+            <div class="line w-100 bg-dark mb-4 mt-2"></div>
+            <section class="container text-center">
+                <div class="title py-5">
+                    <h2 class="fs-4 fw-bold text-black mt-2 mb-5">Bookmark your favorite sites</h2>
+                    <p class="fs-6 fw-bold mt-3 mb-2">Site Name</p>
+                    <input type="text" id="bookName" class="form-control w-75 mx-auto P-1" placeholder="Bookmark Name" required>
+                    <p class="error-text w-75 mx-auto P-1 mt-1 fs-6 fw-bold bg-danger bg-opacity-50" id="errorName">Name is Required</p>
+                    <p class="fs-6 fw-bold mt-3 mb-2">Site URL</p>
+                    <input type="url" id="webSiteUrl" class="form-control w-75 mx-auto p-1" placeholder="website URL" required>
+                    <p class="error-text w-75 mx-auto P-1 mt-1 fs-6 fw-bold bg-danger bg-opacity-50" id="errorUrl">Url Field is required</p>
+                    <button id="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
+                <div id="showData" class="data p-3 mt-4">
+                    <div class="row g-3" id="myData">
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="line w-100 bg-dark mt-4 mb-2"></div>
+            <footer class="container py-3 text-center">
+                <h3 class="title-p fs-6 fw-bold">&copy; 2019 Bookmarker Inc.</h3>
+            </footer>
+        </section>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
